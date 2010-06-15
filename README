@@ -1,0 +1,34 @@
+Advanced Simulation Directory Flora Version 0.1 Alpha
+
+Copyright 2010 by Robert Christian Taylor (r0wbrt)
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+The goal of the kernel is to be a modular kernel with an advanced virtualized 
+file system where all resources are represented as files. Everything will just 
+be streams of bytes their will be no ioctrl calls. The system also plans to have 
+advanced features such as Union mounted filesystems, and dynamic filesystem 
+namespaces. The system stated goal is to be able take a viriety of filesystem 
+resources and then take them and make them all appear as one namespace as well
+as allow user applications to beable to rearange their namespace as they see fit.
+The system also strives to provide isolation between different sessions for added 
+security. THe eventual goal is for the kernel to work as a distributed system and 
+be able to scale to thousands of nodes.  
+
+
+Email Bug Reports or Feature Requests to: r0wbrt@gmail.com
+
+The kernel is currently in the alpha stage and is undergoing active development.
+Version 0.1 will be completed when the kernel can start paging, read a memdisk 
+load it in to memory and execute a program on it. Until then it is in alpha of 
+version 0.1.
