@@ -1,30 +1,4 @@
-/*
-###############################################################################################
-# Copyright 2010 Robert Christian Taylor. All rights reserved.                                #
-#                                                                                             #
-# Redistribution and use in source and binary forms, with or without modification, are        #
-# permitted provided that the following conditions are met:                                   #
-#                                                                                             #
-#  1. Redistributions of source code must retain the above copyright notice, this list of     #
-#     conditions and the following disclaimer.                                                #
-#                                                                                             #
-# THIS SOFTWARE IS PROVIDED BY Robert Christian Taylor ``AS IS'' AND ANY EXPRESS OR IMPLIED   #
-# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND    #
-# FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Robert Christian Taylor  #
-# OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR      #
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR    #
-# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON    #
-# ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING          #
-# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF        #
-# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                                                  #
-#                                                                                             #
-# The views and conclusions contained in the software and documentation are those of the      #
-# authors and should not be interpreted as representing official policies, either expressed   #
-# or implied, of Robert Christain Taylor.                                                     #
-###############################################################################################
-*/
-
-
+/*Copyright 2010 Robert Christian Taylor. All Rights Reserved.*/
 /*
  Standard String C Runtime implementation done just for ASDF to avoid
  licensing issues. All control data is done in standard ASCII. Unicode functions
@@ -35,9 +9,6 @@
   moved into the FOR loop's body. This was done for better readability,
   and to prevent segment faults of the code.
 * Modified on June 11 of 2010. Code reformated for better readability.
-* Modified on June 14 of 2010. Code was put through newlibs test suite.
-  Bugs in the code were fixed. The code can now be safely used in the ASDF
-  kernel. For production however the code will need much more testing.
 */
 
 
@@ -371,7 +342,7 @@ char * strstr(const char * s1, const char * sub_string)
 
 char * strtok(char * string, const char * token)
 {
-  return NULL;
+  return strtok_r(string, (char *)token, (char *)NULL);
 }
 
 char * strtok_r(char * s1, char * s2, char * s3)
