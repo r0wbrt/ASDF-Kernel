@@ -40,7 +40,6 @@ void kentry(void * mbd, unsigned int magic, void * ptable)
 {
   term_init();
   term_write(ki_about_message);
-  cas(NULL,0,0);
   kentry_panic("\r\nKernel kentry has no where to go!\r\n");
 
   return ;
