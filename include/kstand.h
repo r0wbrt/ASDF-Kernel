@@ -1,27 +1,20 @@
 /*
-###############################################################################################
-# Copyright 2010 Robert Christian Taylor. All rights reserved.                                #
-#                                                                                             #
-# Redistribution and use in source and binary forms, with or without modification, are        #
-# permitted provided that the following conditions are met:                                   #
-#                                                                                             #
-#  1. Redistributions of source code must retain the above copyright notice, this list of     #
-#     conditions and the following disclaimer.                                                #
-#                                                                                             #
-# THIS SOFTWARE IS PROVIDED BY Robert Christian Taylor ``AS IS'' AND ANY EXPRESS OR IMPLIED   #
-# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND    #
-# FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Robert Christian Taylor  #
-# OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR      #
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR    #
-# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON    #
-# ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING          #
-# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF        #
-# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                                                  #
-#                                                                                             #
-# The views and conclusions contained in the software and documentation are those of the      #
-# authors and should not be interpreted as representing official policies, either expressed   #
-# or implied, of Robert Christain Taylor.                                                     #
-###############################################################################################
+    Advanced Simulated Filesystem Flora Kernel
+    Copyright (C) 2010  Robert Christian Taylor
+
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License
+    as published by the Free Software Foundation; either version 2
+    of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 #ifndef _KSTAND_H_
 #define _KSTAND_H_
@@ -37,62 +30,30 @@
 
 #ifdef _KSTAND_INC_KI_INFO_H_
 
-#ifndef KI_NOTOFFICIAL_BUILD
 const char ki_about_message[] = "\
-Advanced Simulated Directory Flora (ASDF) 0.1.0.1\r\n\
-Copyright 2010 by Robert Christian Taylor (r0wbrt)\r\n\r\n\
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\r\n\
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n\
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n\
-ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\r\n\
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\r\n\
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\r\n\
-OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\r\n\
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\r\n\
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\r\n\
-OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\r\n\
-SUCH DAMAGE.\r\n\r\n\
-Email Bug Reports or Feature Requests to: r0wbrt@gmail.com\r\n\r\n";
-#else
-const char ki_about_message[] = "\
-Advanced Simulated Directory Flora (ASDF) 0.1.0.1\r\n\
-Copyright 2010 by Robert Christian Taylor (r0wbrt)\r\n\
-Copyright Modifications by Distributor\r\n\r\n\
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\r\n\
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n\
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n\
-ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\r\n\
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\r\n\
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\r\n\
-OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\r\n\
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\r\n\
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\r\n\
-OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\r\n\
-SUCH DAMAGE.\r\n\r\n\
-For Bug Reports and Feature Requests Contact your Distributor\r\n\r\n";
-#endif
-
+Advanced Simulated Filesystem Flora Kernel\r\n\
+Copyright (C) 2010  Robert Christian Taylor\r\n\
+\r\n\
+This program is free software; you can redistribute it and/or\r\n\
+modify it under the terms of the GNU General Public License\r\n\
+as published by the Free Software Foundation; either version 2\r\n\
+of the License, or (at your option) any later version.\r\n\
+\r\n\
+This program is distributed in the hope that it will be useful,\r\n\
+but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n\
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n\
+GNU General Public License for more details.\r\n\
+\r\n\
+You should have received a copy of the GNU General Public License\r\n\
+along with this program; if not, write to the Free Software\r\n\
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\r\n\
+\r\n";
 
 const char ki_version[] = "0.1.0.1";
 
-#ifndef KI_NOTOFFICIAL_BUILD
-const char ki_maintainer[] = "Robert Christian Taylor r0wbrt@gmail.com";
-#else
-const char ki_maintainer[] = "Custom Built, Contact your Distributor";
-#endif
 
 
-#if KI_VERSION_BUILD != KI_VERSION_STABLE
-const char ki_name[] = "Unstable";
-#else
-const char ki_name[] = "Stable";
-#endif
 
-#ifndef KI_NOTOFFICIAL_BUILD
-const char ki_copyright[] = "Copyright 2010 by Robert Christian Taylor (r0wbrt)";
-#else
-const char ki_copyright[] = "Copyright 2010 by Robert Christian Taylor (r0wbrt) and Copyright Modifications by Distributor";
-#endif
 
 #endif
 #endif

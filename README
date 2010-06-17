@@ -1,7 +1,20 @@
-Advanced Simulation Directory Flora Version 0.1 Alpha
+Advanced Simulated Filesystem Flora Kernel
+Copyright (C) 2010  Robert Christian Taylor
 
-Copyright 2010 by Robert Christian Taylor (r0wbrt)
-See license
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
 
 The goal of the kernel is to be a modular kernel with an advanced virtualized 
 file system where all resources are represented as files. Everything will just 
@@ -14,8 +27,6 @@ The system also strives to provide isolation between different sessions for adde
 security. THe eventual goal is for the kernel to work as a distributed system and 
 be able to scale to thousands of nodes.  
 
-
-Email Bug Reports or Feature Requests to: r0wbrt@gmail.com
 
 The kernel is currently in the alpha stage and is undergoing active development.
 Version 0.1 will be completed when the kernel can start paging, read a memdisk 
