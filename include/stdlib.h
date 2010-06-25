@@ -22,6 +22,5 @@
 #define NULL 0
 #endif
 #include <stddef.h>
-void* malloc(size_t size);
-void free(void *p);
+#include <kmemory.h>
 #endif

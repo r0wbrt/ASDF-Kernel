@@ -33,3 +33,6 @@
 #define ULONG_MAX	0xffffffffUL
 
 
+#define PAGE_SIZE 4096
+#define PAGE_ALIGN 0xFFFF1000
+

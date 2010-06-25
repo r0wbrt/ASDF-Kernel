@@ -44,3 +44,4 @@ int   term_setpos(int32_t r, int32_t c);
 void  term_color(uint8_t front, uint8_t back);
 void  term_write(const char * string);
 void  term_init();
+void  term_printf(const char * format, ...);

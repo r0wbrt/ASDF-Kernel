@@ -27,6 +27,8 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <terminal.h>
+#include <inlineasm.h>
+#include <multiboot.h>
 /*Pic Data*/
 #define PIC_1_OFFSET 0x20
 #define PIC_2_OFFSET 0x2F

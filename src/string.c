@@ -278,6 +278,8 @@ char * strpbrk(const char * str1, const char * str2)
       }
     }
   }
+
+  return NULL;
 }
 
 char  * strrchr(const char * string, int charecter)
@@ -423,7 +425,6 @@ int strcmp(const char * s1, const char * s2)
 {
   char *c1 = (char *)s1;
   char *c2 = (char *)s2;
-  size_t i;
 
   for(; *c1 == *c2 && *c1 != '\0'; c1++, c2++)
   {}

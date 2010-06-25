@@ -1,10 +1,10 @@
 ;    Advanced Simulated Filesystem Flora Kernel
 ;    Copyright (C) 2010  Robert Christian Taylor
 ;
-;   This program is free software; you can redistribute it and/or
+;    This program is free software; you can redistribute it and/or
 ;    modify it under the terms of the GNU General Public License
 ;    as published by the Free Software Foundation; either version 2
-;   of the License, or (at your option) any later version.
+;    of the License, or (at your option) any later version.
 ;
 ;    This program is distributed in the hope that it will be useful,
 ;    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -42,28 +42,28 @@ MultiBootHeader:
 _asm_kistck_sz  equ 0x4000
 entry:
     mov ecx, (_asm_bpg - _asm_kvb)
-    mov cr3, ecx                                     
+    mov cr3, ecx
     mov ecx, cr4
-    or ecx, 0x00000010                          
+    or ecx, 0x00000010
     mov cr4, ecx
     mov ecx, cr0
-    or ecx, 0x80000000                          
+    or ecx, 0x80000000
     mov cr0, ecx
     lea ecx, [_asm_erc]
-    jmp ecx                                                    
- 
+    jmp ecx
+
 _asm_erc:
-    mov esp, _asm_kistck+_asm_kistck_sz 
+    mov esp, _asm_kistck+_asm_kistck_sz
     mov ecx, (_asm_bpg)
-    push ecx    
-    push eax 
+    push ecx
+    push eax
     push ebx
     call  kentry
-    
+
 _asm_hlt_lp:
-    hlt  
+    hlt
     jmp _asm_hlt_lp
-    
+
 section .bss
 align 32
 _asm_kistck:

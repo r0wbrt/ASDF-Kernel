@@ -18,7 +18,7 @@
 */
 #define _INCLUDE_KENTRY_H_SETTINGS_
 #include <kentry.h>
-#include <inlineasm.h>
+
 
 void kentry_panic(const char * string)
 {
@@ -29,17 +29,17 @@ void kentry_panic(const char * string)
   }
 }
 
-void kentry(void * mbd, unsigned int magic, void * ptable)
+void kentry(multiboot_info_t * mbd, unsigned int magic, void * ptable)
 {
   term_init();
   term_write(ki_about_message);
 
-  if(magic!=0x2BADB002 || mbd == NULL)
+  if(magic != MULTIBOOT_BOOTLOADER_MAGIC || mbd == NULL)
   {
-    kentry_panic("\r\nError: Booted by non-compliant bootloader");
+    kentry_panic("\r\nERROR: Booted by non-compliant bootloader");
   }
 
-  kentry_panic("\r\nKernel kentry has no where to go!");
+  kentry_panic("\r\nKernel Panic, no more code, Cpu Halting\r\n");
 
   return ;
 }

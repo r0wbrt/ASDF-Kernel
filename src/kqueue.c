@@ -135,7 +135,7 @@ int kqueue_get(struct kqueue_message * message, uint32_t * type, void ** p)
   return KQUEUE_SUCCESS;
 }
 
-int kqueue_dismis(struct kqueue_message * message)
+int kqueue_dismiss(struct kqueue_message * message)
 {
   if(message == message->mm->next || message->next == NULL)
   {
